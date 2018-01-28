@@ -11,8 +11,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-plugin-inline-import": "^2.0.6",
     "next": "^4.2.3",
+    "normalize.css": "^7.0.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.6",
+    "typography-theme-grand-view": "^0.15.10"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
   }
 }
