@@ -1,14 +1,16 @@
 {
-  "name": "home",
+  "name": "colombia-dev-home",
   "version": "1.0.0",
-  "description": "",
+  "description": "colombia-dev.org homepage",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "keywords": [],
-  "author": "",
+  "author": "Juan Pablo Buriticá <buritica@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "babel-plugin-inline-import": "^2.0.6",
