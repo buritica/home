@@ -13,14 +13,23 @@
   "dependencies": {
     "babel-plugin-inline-import": "^2.0.6",
     "next": "^4.2.3",
-    "normalize.css": "^7.0.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-normalize": "^4.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-typography": "^0.16.13",
+    "styled-jsx-plugin-postcss": "^0.1.2",
     "typography": "^0.16.6",
     "typography-theme-grand-view": "^0.15.10"
   },
   "devDependencies": {
     "standard": "^10.0.3"
-  }
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-nested": {},
+      "postcss-normalize": {}
+    }
+  },
+  "browserslist": "last 2 versions"
 }

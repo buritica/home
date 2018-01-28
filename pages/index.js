@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import normalize from 'normalize.css/normalize.css'
-
 import typography from '../utils/typography'
 import { TypographyStyle, GoogleFont } from 'react-typography'
 const { rhythm } = typography
@@ -14,10 +12,13 @@ export default () => (
       <GoogleFont typography={typography} />
     </Head>
 
-    <div class='container'>
+    <div className='container'>
       <img id='logo' src='./static/logo_condor.svg' alt='Colombia.dev Logo Condor ' />
       <h1>colombia.dev</h1>
-      <style jsx global>{normalize}</style>
+      <div className="content">
+        <h2>¿Qué es Colombia.dev?</h2>
+      </div>
+
       <style jsx>{`
 
         .container {
@@ -25,7 +26,19 @@ export default () => (
         }
 
         #logo {
+          margin-bottom: 0;
+        }
 
+        h1 {
+          text-align: center;
+        }
+
+        .content {
+          background: #531516;
+
+          h2 {
+            color: #ffffff;
+          }
         }
       `}</style>
     </div>

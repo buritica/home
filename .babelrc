@@ -1,16 +1,14 @@
 {
-  "plugins": [
+  "presets": [
     [
-      "inline-import",
+      "next/babel",
       {
-        "extensions": [
-          ".css"
-        ]
+        "styled-jsx": {
+          "plugins": [
+            "styled-jsx-plugin-postcss"
+          ]
+        }
       }
     ]
-  ],
-  "presets": [
-    "next/babel"
-  ],
-  "ignore": []
+  ]
 }
