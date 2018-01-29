@@ -1,17 +1,8 @@
-import Head from 'next/head'
-import typography from '../utils/typography'
-import { TypographyStyle, GoogleFont } from 'react-typography'
-const { rhythm } = typography
+import Meta, { rhythm } from '../components/meta'
 
 export default () => (
   <div>
-    <Head>
-      <title>🇨🇴 colombia.dev 🇨🇴</title>
-      <meta charSet='utf-8' />
-      <meta name='viewport' content='width=device-width, initial-scale=1' />
-      <TypographyStyle typography={typography} />
-      <GoogleFont typography={typography} />
-    </Head>
+    <Meta subtitle='inicio' />
 
     <div className='container'>
       <img
@@ -69,10 +60,6 @@ export default () => (
           @custom-media --medium-up (width > 641px);
           @custom-media --large-up (width > 1025px);
           
-          h1, h2, h3, h4, h5, h6 {
-            margin-top: 1.6875rem;
-          }
-
           .container {
             display: grid;
             grid-template-areas: "logo" "header" "content";
