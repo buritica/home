@@ -72,6 +72,7 @@ export default () => (
           padding-right: 1rem
         }
       }
+      
     `}</style>
   </Layout>
 )

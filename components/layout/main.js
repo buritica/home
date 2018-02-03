@@ -1,15 +1,18 @@
 import Meta, { rhythm } from '../meta'
+import Link from 'next/link'
 
 export default props => (
   <div>
     <Meta subtitle='inicio' />
 
     <div className='container'>
-      <img
-        id='logo'
-        src='./static/logo_condor.svg'
-        alt='colombia.dev Logo Condor'
-      />
+      <Link href='/'>
+        <img
+          id='logo'
+          src='./static/logo_condor.svg'
+          alt='colombia.dev Logo Condor'
+        />
+      </Link>
       <h1>colombia.dev</h1>
       <div className='content-bg'>
         <div className='content'>
@@ -37,9 +40,10 @@ export default props => (
       grid-area: logo;
       max-width: 90%;
       margin-bottom: 0;
+      cursor: pointer;
 
       @media (--medium-up){
-        max-width: 450px;
+        max-width: 300px;
       }
     }
 
